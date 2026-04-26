@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taiga Portfolio</title>
+    <title>Design Works</title>
     <meta
       name="description"
       content="デザイン作品をシンプルに一覧表示するポートフォリオサイトです。"
@@ -14,7 +14,7 @@
     <header class="site-header">
       <div class="container">
         <p class="eyebrow">PORTFOLIO</p>
-        <h1>Taiga Design Works</h1>
+        <h1>Design Works</h1>
         <p class="lead">
           シンプルで見やすく、作品が増えても運用しやすい構成にしています。
         </p>
@@ -32,7 +32,6 @@
     <main class="container">
       <section class="section-head">
         <h2>作品一覧</h2>
-        <p id="project-count" aria-live="polite"></p>
       </section>
 
       <section id="gallery" class="gallery" aria-label="作品ギャラリー"></section>
@@ -41,16 +40,33 @@
     <template id="project-card-template">
       <article class="card">
         <img class="card-image" alt="" loading="lazy" />
-        <div class="card-body">
-          <p class="card-meta"></p>
-          <h3 class="card-title"></h3>
-          <p class="card-description"></p>
-        </div>
       </article>
     </template>
 
     <footer class="site-footer">
       <div class="container">
+        <a
+          class="contact-button contact-button-footer"
+          href="https://form.run/@NAKAMURA-qq1j9CZHahTYKknfV9j1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          お問い合わせはこちら
+        </a>
+        <a
+          class="instagram-link"
+          href="https://www.instagram.com/syoco_w/tagged/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram アカウントへ移動"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.38-2.38a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24Z"
+            />
+          </svg>
+          <span>Instagram</span>
+        </a>
         <small>© 2026 Taiga Portfolio</small>
       </div>
     </footer>
