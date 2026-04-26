@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiga Portfolio</title>
+    <meta
+      name="description"
+      content="デザイン作品をシンプルに一覧表示するポートフォリオサイトです。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h1>Taiga Design Works</h1>
+        <p class="lead">
+          シンプルで見やすく、作品が増えても運用しやすい構成にしています。
+        </p>
+        <a
+          class="contact-button"
+          href="https://form.run/@NAKAMURA-qq1j9CZHahTYKknfV9j1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          お問い合わせはこちら
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section-head">
+        <h2>作品一覧</h2>
+        <p id="project-count" aria-live="polite"></p>
+      </section>
+
+      <section id="gallery" class="gallery" aria-label="作品ギャラリー"></section>
+    </main>
+
+    <template id="project-card-template">
+      <article class="card">
+        <img class="card-image" alt="" loading="lazy" />
+        <div class="card-body">
+          <p class="card-meta"></p>
+          <h3 class="card-title"></h3>
+          <p class="card-description"></p>
+        </div>
+      </article>
+    </template>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 Taiga Portfolio</small>
+      </div>
+    </footer>
+
+    <script src="data/projects.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
